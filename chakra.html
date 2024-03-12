@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chakravyuh - Cinemachine</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles specific to this page */
+        /* CSS styles for the modal window */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .close {
+            color: #333;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Center the full-size image within the modal */
+        .modal-content img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .deploy-type-lu {
+            position: absolute;
+            top: 20px; /* Adjust the top position as needed */
+            left: 270px; /* Adjust the right position as needed */
+            padding: 10px;
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            background-color: #f9f9f9; /* Light background color */
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chakravyuh - Cinemachine</h1>
+</header>
+
+<main>
+    <section class="project-type">
+        <div class="type-info">
+            <span class="type-label">Project Type:</span>
+            <span class="type-name">Unity Cinemachine</span>
+        </div>
+    </section>
+
+    <section class="deploy-type-id">
+        <div class="type-info">
+            <span class="type-label">Initial Deployment:</span>
+            <span class="type-name">June 2018</span>
+        </div>
+    </section>
+
+    <section class="deploy-type-lu">
+        <div class="type-info">
+            <span class="type-label">Latest Update:</span>
+            <span class="type-name">June 2018</span>
+        </div>
+    </section>
+
+    <section class="project-description">
+        <h2>Description</h2>
+        <p>Chakravyuh stands as a pioneering cinematic project crafted within Unity, meticulously designed to elucidate the regulations governing a physical team game hosted at our college. Leveraging Unity's extensive Asset Store, the project seamlessly integrates Unity Cinemachine, a sophisticated tool for creating cinematic gameplay cutscenes directly within the Unity Engine. Employing a blend of C# and JavaScript, Chakravyuh epitomizes a testament to my adeptness in game development and innovative utilization of cutting-edge technologies within the Unity ecosystem.</p>    
+    </section>
+
+    <hr class="separator">
+    
+    <div class="upper-container">
+        <div class="upper-half-section platform-section">
+            <section>
+                <h2>Platform</h2>
+                <div class="platform-details">
+                    <div class="platform-info">
+                        <div class="platform-name">Unity</div>
+                        <img src="Resources\_Logos\Unity_Logo.png" alt="The SmartWit Logo" class="image" style="max-width: 200px; max-height: 100px;">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="upper-half-section tools-section">
+            <section>
+                <h2>Tools & Languages Used</h2>
+                <div class="tools-details">
+                    <div class="tools-info">
+                        <div class="tools-name">C#</div>
+                        <img src="Resources\_Logos\C Sharp_Logo.png" alt="Canva Logo" class="image" style="max-width: 200px; max-height: 100px;">
+                    </div>
+                    <div class="tools-info">
+                        <div class="tools-name">Javascript</div>
+                        <img src="Resources\_Logos\Javascript_Logo.png" alt="Adobe Photoshop Logo" class="image" style="max-width: 200px; max-height: 100px;">
+                    </div>
+                    <div class="tools-info">
+                        <div class="tools-name">VS Code</div>
+                        <img src="Resources\_Logos\VisualStudioCode_Logo.png" alt="Adobe Photoshop Logo" class="image" style="max-width: 200px; max-height: 100px;">
+                    </div>
+                </div>
+            </section>
+        </div>  
+    </div>
+    
+    <hr class="separator">
+    
+    <section class="project-links">
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://youtu.be/EoBqBBO_0Uo">Project Showcase</a></li>    
+        </ul>
+    </section>
+
+    <hr class="separator">
+
+    <section class="project-images">
+        <h2 class="project-images-heading">Project Images</h2>
+        
+        <div class="slideshow-container">
+            <p>Click on the images to view them.</p>
+            <div class="slides">
+                <img src="Resources\Unity & Unreal Projects\Chakravyuh\GIFs\GG1.gif" alt="Display Page 1" class="image">
+                <img src="Resources\Unity & Unreal Projects\Chakravyuh\GIFs\GG2.gif" alt="Display Page 2" class="image">
+                <img src="Resources\Unity & Unreal Projects\Chakravyuh\GIFs\GG3.gif" alt="Display Page 3" class="image">
+                <img src="Resources\Unity & Unreal Projects\Chakravyuh\GIFs\GG4.gif" alt="Display Page 4" class="image">
+                <img src="Resources\Unity & Unreal Projects\Chakravyuh\GIFs\GG5.gif" alt="Display Page 5" class="image">
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <!-- Add footer content if needed -->
+</footer>
+
+<!-- Modal window for displaying full-size images -->
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="fullImage">
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('modal');
+    const fullImage = document.getElementById('fullImage');
+    const images = document.querySelectorAll('.project-images img');
+
+    images.forEach(img => {
+        img.addEventListener('click', function() {
+            modal.style.display = 'block';
+            fullImage.src = this.src;
+        });
+    });
+
+    const closeBtn = document.getElementsByClassName('close')[0];
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+</script>
+
+</body>
+</html>
+
+
+
+                
