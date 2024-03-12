@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "A Full-Stack Application Aimed at displaying all the projects in 1 place.",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "keywords": [
+    "full-stack",
+    "web application",
+    "projects portfolio",
+    "social network",
+    "to-do list",
+    "blog",
+    "Microsoft Excel",
+    "Bubble.io",
+    "Unreal Engine",
+    "Unity",
+    "smart wit",
+    "Finhat",
+    "Green Corridor",
+    "Rajasthan Digifest"
+  ],
+  "author": "Prarabdh Chaturvedi",
+  "license": "ISC"
+}

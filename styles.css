@@ -1,0 +1,395 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-section {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px solid #333; /* Dark border */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.project-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Hover effect for list items */
+.project-list li:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+
+h3 {
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Hover effect for list items */
+li:hover {
+    cursor: pointer;
+    text-decoration: bold;
+    color: #333;
+}
+
+a {
+    color: #006666;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #006666;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #005555;
+}
+
+/* CSS for uniform size of images */
+.project-images {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth effect */
+}
+/* CSS for stretching images to fit */
+.project-images img {
+    width: 280px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
+    object-fit: cover; /* Stretch the image to cover the container */
+    border-radius: 8px; /* Optional: Add rounded corners for a nicer look */
+}
+
+.project-images-heading {
+    text-align: center; /* Center-align the heading */
+    font-size: 24px; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.slideshow-container {
+    text-align: center; /* Center-align the slideshow content */
+}
+
+.slides {
+    display: flex;
+    justify-content: center; /* Center-align the images horizontally */
+    flex-wrap: wrap; /* Allow images to wrap to next line if necessary */
+    gap: 20px; /* Add space between images */
+}
+
+.image {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    transition: transform 0.3s ease; /* Add smooth transition on hover */
+}
+
+.image:hover {
+    transform: scale(1.05); /* Enlarge image slightly on hover */
+}
+
+.upper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.upper-half-section {
+    width: 47.5%; /* Adjust width as needed */
+    padding: 10px;
+    border: 2px solid #333; /* Dark border */
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.upper-half-section:hover {
+    transform: translateY(-5px); /* Move the section up on hover */
+}
+
+.upper-half-section section {
+    text-align: center;
+}
+
+.platform-details, .tools-details {
+    display:flex;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.platform-name, .tools-name {
+    font-family: 'Arial', sans-serif; /* Choose an elegant font */
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.platform-info, .tools-info {
+    display: flex; /* Add flex display */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    margin-right: 5px; /* Adjust spacing between items */
+}
+
+.platform-info img, .tools-info img {
+    margin-top: 10px; /* Add space between name and logo */
+}
+
+
+.platform-logos, .tools-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.deployment-info {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    border: 1px solid black; /* Add border around each entry */
+    padding: 10px; /* Add padding to create space between text and border */
+}
+
+.deployment-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px; /* Add spacing between entries */
+}
+
+.deployment-label, .deployment-year {
+    font-size: 18px;
+    margin: 5px;
+}
+
+.deployment-label {
+    font-weight: bold;
+}
+
+.deployment-year {
+    color: #333;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.half-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0 25px;
+    padding-left: 0 25px;
+    padding: 0 10px;
+}
+
+.year-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.lang-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.year {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    border: 2px solid #333; /* Add solid border directly to the year text */
+    padding: 10px 20px; /* Add padding for spacing */
+}
+.separator {
+    border: none; /* Remove default border */
+    border-top: 2px solid #000; /* Add black border */
+    margin: 20px 0; /* Adjust margin for spacing */
+}
+
+.project-description {
+    font-family: 'Segoe UI', Arial, sans-serif; /* Use a modern font */
+    line-height: 1.6; /* Increase line height for better readability */
+    margin-bottom: 30px; /* Add some space at the bottom for separation */
+}
+
+.project-type {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+    padding: 10px;
+    border: 2px solid black; /* Black border */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.deploy-type-id {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the right position as needed */
+    padding: 10px;
+    border: 2px solid black; /* Black border */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.deploy-type-lu {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    left: 320px; /* Adjust the right position as needed */
+    padding: 10px;
+    border: 2px solid black; /* Black border */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.type-info {
+    font-size: 16px;
+}
+
+.type-label {
+    font-weight: bold;
+    color: #333; /* Dark color for the label */
+}
+
+.type-name {
+    color: #666; /* Gray color for the type name */
+}
+
+
+.project-type-heading {
+    font-size: 24px; /* Larger font size for the heading */
+    margin-bottom: 10px; /* Add space below the heading */
+    color: #333; /* Dark color for the heading */
+}
+
+.project-type-description {
+    font-size: 18px; /* Medium font size for the project type */
+    color: #666; /* Gray color for the description */
+}
+
+
+.project-description h2 {
+    font-size: 24px; /* Increase font size for headings */
+    color: #333; /* Set heading color */
+}
+
+.project-type h3 {
+    font-size: 18px; /* Increase font size for headings */
+    color: #333; /* Set heading color */
+}
+
+.project-description p {
+    font-size: 18px; /* Set font size for paragraphs */
+    color: #666; /* Set paragraph color */
+    text-align: justify; /* Justify text */
+}
+
+.project-description p:first-of-type {
+    margin-top: 0; /* Remove top margin for the first paragraph */
+}
+
+.project-description p:last-of-type {
+    margin-bottom: 0; /* Remove bottom margin for the last paragraph */
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.logo-image {
+    max-width: 200px;
+    max-height: 200px;
+    border: 2px solid #333; /* Border color */
+    border-radius: 10px; /* Adjust border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.description-heading {
+    text-align: center;
+}
+
+
+
+
+  
