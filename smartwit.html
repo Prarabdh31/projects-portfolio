@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The SmartWit Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles specific to this page */
+        /* CSS styles for the modal window */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .close {
+            color: #333;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Center the full-size image within the modal */
+        .modal-content img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .deploy-type-lu {
+            position: absolute;
+            top: 20px; /* Adjust the top position as needed */
+            left: 310px; /* Adjust the right position as needed */
+            padding: 10px;
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            background-color: #f9f9f9; /* Light background color */
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The SmartWit Project</h1>
+</header>
+
+<section class="deploy-type-id">
+    <div class="type-info">
+        <span class="type-label">Initial Deployment:</span>
+        <span class="type-name">November 2017</span>
+    </div>
+</section>
+
+<section class="deploy-type-lu">
+    <div class="type-info">
+        <span class="type-label">Latest Update:</span>
+        <span class="type-name">October 2019</span>
+    </div>
+</section>
+
+<main>
+    <section class="project-type">
+        <div class="type-info">
+            <span class="type-label">Project Type:</span>
+            <span class="type-name">Website & Entrepreneurship Cell</span>
+        </div>
+    </section>
+
+
+    <section class="logo-section">
+        <img src="E:\project-portfolio\Resources\_Logos\TheSmartWit_Logo.png" alt="SmartWit Logo" class="logo-image">
+    </section>
+    
+    <section class="project-description">
+        <h2 class="description-heading">Description</h2>
+
+        <p>The Smart-Wit Project emerged as a pioneering initiative within my college, initially conceived as an Entrepreneurship Cell (E-Cell) and later evolving into a prominent activity group dedicated to fostering entrepreneurial spirit and skill development among students. Spearheading the establishment of the college's inaugural E-Cell, my team and I collaborated closely with faculty mentors to simulate the intricacies of launching in-campus companies, navigating through realistic yet simulated complexities and paperwork associated with entrepreneurial ventures.
+
+            Under the umbrella of The Smartwit Project, a diverse array of activities were organized, including personal interviews, mock drills, group discussions, leadership exercises, team-building initiatives, Physical games like <a href="chakra.html">“Chakravyuh”</a> and annual orientation programs for incoming students. Additionally, we facilitated workshops covering cutting-edge technologies that were not covered in our syllabus such as Game Development, Internet of Things using Raspberry Pi, and Machine Learning, ensuring students remained abreast of the latest advancements in their respective fields.
+            
+            Notably, The Smartwit Project also initiated the college's first student-based magazine, <a href="plethora.html">"Plethora"</a>, providing a platform for creative expression and intellectual discourse within the campus community.
+            
+            Through strategic initiatives and collaborative efforts, The Smartwit Project experienced exponential growth, expanding to encompass 25 field members at its peak and attracting over 120 registered members campus-wide. Leveraging our platforms, we mentored and supported 12 budding entrepreneurs in establishing their own college-based ventures, while also providing invaluable assistance to numerous students through our immersive mock drills and workshops.
+            </p>    
+    </section>
+
+    <hr class="separator">
+    
+    <div class="upper-container">
+        <div class="upper-half-section platform-section">
+            <section>
+                <h2>Platform</h2>
+                <div class="platform-details">
+                    <div class="platform-info">
+                        <div class="platform-name">Wix</div>
+                        <img src="E:\project-portfolio\Resources\_Logos\Wix_Logo.png" alt="Wix Logo" class="image" style="max-width: 200px; max-height: 100px;">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="upper-half-section tools-section">
+            <section>
+                <h2>Tools Used</h2>
+                <div class="tools-details">
+                    <div class="tools-info">
+                        <div class="tools-name">Canva</div>
+                        <img src="E:\project-portfolio\Resources\_Logos\Canva_logo.png" alt="Canva Logo" class="image" style="max-width: 200px; max-height: 100px;">
+                    </div>
+                    <div class="tools-info">
+                        <div class="tools-name">Photoshop</div>
+                        <img src="E:\project-portfolio\Resources\_Logos\Adobe Photoshop_Logo.png" alt="Adobe Photoshop Logo" class="image" style="max-width: 200px; max-height: 100px;">
+                    </div>
+                    <div class="tools-info">
+                        <div class="tools-name">Excel</div>
+                        <img src="E:\project-portfolio\Resources\_Logos\Excel_Logo.png" alt="Adobe Photoshop Logo" class="image" style="max-width: 200px; max-height: 100px;">
+                    </div>
+                    <div class="tools-info">
+                        <div class="tools-name">VS Code</div>
+                        <img src="E:\project-portfolio\Resources\_Logos\VisualStudioCode_Logo.png" alt="Adobe Photoshop Logo" class="image" style="max-width: 200px; max-height: 100px;">
+                    </div>
+                    <div class="tools-info">
+                        <div class="tools-name">OSSN</div>
+                        <img src="E:\project-portfolio\Resources\_Logos\OSSN_Logo.png" alt="Adobe Photoshop Logo" class="image" style="max-width: 200px; max-height: 100px;">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <hr class="separator">
+    
+    <section class="project-links">
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://smartwit.wixsite.com/smartwit">Website</a></li>    
+        </ul>
+        <ul>
+            <li><a href="https://docs.google.com/document/d/e/2PACX-1vQYKANvZuwY-duL5wOI8zTbVW6nSj6xG2b8wQ6QozWMNjCRBQ6RxSzQML1cTLzxTxWOEkVlGRMs3bmL/pub">Documentation</a></li>    
+        </ul>    
+    </section>
+
+    <hr class="separator">
+
+    <section class="project-images">
+        <h2 class="project-images-heading">Project Images</h2>
+        
+        <div class="slideshow-container">
+            <p>Click on the images to view them.</p>
+            <div class="slides">
+                <img src="E:\project-portfolio\Resources\SmartWit\The SmartWit Project\SS1.png" alt="Display Page 1" class="image">
+                <img src="E:\project-portfolio\Resources\SmartWit\The SmartWit Project\SS2.png" alt="Display Page 2" class="image">
+                <img src="E:\project-portfolio\Resources\SmartWit\The SmartWit Project\SS3.png" alt="Display Page 3" class="image">
+                <img src="E:\project-portfolio\Resources\SmartWit\The SmartWit Project\GIFs\GG1.gif" alt="Display Page 4" class="image">
+                <img src="E:\project-portfolio\Resources\SmartWit\The SmartWit Project\GIFs\GG2.gif" alt="Display Page 5" class="image">
+                <img src="E:\project-portfolio\Resources\SmartWit\The SmartWit Project\GIFs\GG3.gif" alt="Display Page 6" class="image">
+                <img src="E:\project-portfolio\Resources\SmartWit\The SmartWit Project\GIFs\GG4.gif" alt="Display Page 7" class="image">
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <!-- Add footer content if needed -->
+</footer>
+
+<!-- Modal window for displaying full-size images -->
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="fullImage">
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('modal');
+    const fullImage = document.getElementById('fullImage');
+    const images = document.querySelectorAll('.project-images img');
+
+    images.forEach(img => {
+        img.addEventListener('click', function() {
+            modal.style.display = 'block';
+            fullImage.src = this.src;
+        });
+    });
+
+    const closeBtn = document.getElementsByClassName('close')[0];
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+</script>
+
+</body>
+</html>
+
+
+
+                
