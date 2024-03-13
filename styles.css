@@ -496,7 +496,9 @@ a:hover {
         border: 2px solid #333; /* Remove border */
         border-radius: 2; /* Remove border radius */
         background-color: transparent; /* Remove background color */
-        padding: 0; /* Remove padding */
+        padding: 10px; /* Remove padding */
+        align-items: center;
+        text-align: center;
     }
 
     .type-info {
