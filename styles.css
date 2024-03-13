@@ -476,7 +476,7 @@ a:hover {
     /* Reduce the width of images in the platform and tools sections */
     .platform-logos img,
     .tools-logos img {
-        max-width: 100%; /* Adjust the width to fit within the container */
+        max-width: calc(50% - 20px); /* Adjust the width based on half the container width and padding */
         height: auto; /* Maintain aspect ratio */
     }
 }
