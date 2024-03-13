@@ -497,8 +497,8 @@ a:hover {
     /* Make the images smaller and of fixed size */
     .platform-logos img,
     .tools-logos img {
-        width: 80px; /* Set the width of the images */
-        height: auto; /* Maintain aspect ratio */
+        width: 40px; /* Set the width of the images */
+        height: 40%; /* Maintain aspect ratio */
         margin-top: 5px; /* Adjust margin for spacing */
     }
 }
