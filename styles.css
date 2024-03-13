@@ -473,6 +473,12 @@ a:hover {
     .separator {
         margin: 20px auto; /* Center-align separator */
     }
+    /* Reduce the width of images in the platform and tools sections */
+    .platform-logos img,
+    .tools-logos img {
+        max-width: 100%; /* Adjust the width to fit within the container */
+        height: auto; /* Maintain aspect ratio */
+    }
 }
 
 
