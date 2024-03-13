@@ -392,7 +392,7 @@ a:hover {
 /* All existing CSS styles go here */
 
 /* Media query for screens smaller than 768px (standard tablets and smartphones) */
-@media (max-width: 768px) {
+@media only screen and (max-width: 480px) {
     /* Adjustments for smaller screens */
 
     h1 {
