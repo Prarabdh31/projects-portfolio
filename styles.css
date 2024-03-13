@@ -501,7 +501,7 @@ a:hover {
         height: 40px; /* Maintain aspect ratio */
         margin-top: 5px; /* Adjust margin for spacing */
     }
-    .upper-half-section .image {
+    .platform-info, .tools-info .image {
         max-width: 50px; /* Adjusted width for mobile version */
         max-height: auto; 
         border-radius: 4px; /* Adjusted border radius for mobile version */
