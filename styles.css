@@ -431,23 +431,6 @@ a:hover {
         margin: 10px 0; /* Adjusted margin between deployment entries */
     }
 
-    .project-type {
-        position: relative; /* Remove absolute positioning */
-        top: auto; /* Remove top positioning */
-        right: auto; /* Remove right positioning */
-        left: auto; /* Remove left positioning */
-        padding: 10px; /* Adjusted padding for project type */
-        margin-top: 20px; /* Adjusted margin-top for project type */
-    }
-
-    .deploy-type-id, .deploy-type-lu {
-        position: relative; /* Remove absolute positioning */
-        top: auto; /* Remove top positioning */
-        left: auto; /* Remove left positioning */
-        padding: 10px; /* Adjusted padding for deployment info */
-        margin-top: 20px; /* Adjusted margin-top for deployment info */
-    }
-
     .deployment-label, .deployment-year {
         font-size: 16px; /* Adjusted font size for deployment labels */
     }
@@ -500,6 +483,28 @@ a:hover {
         width: 40px; /* Set the width of the images */
         height: auto; /* Maintain aspect ratio */
         margin-top: 5px; /* Adjust margin for spacing */
+    }
+
+    .project-type,
+    .deploy-type-id,
+    .deploy-type-lu {
+        position: relative; /* Change position to relative for mobile */
+        top: auto;
+        left: auto;
+        right: auto;
+        margin-top: 10px; /* Add margin for spacing */
+        border: none; /* Remove border */
+        border-radius: 0; /* Remove border radius */
+        background-color: transparent; /* Remove background color */
+        padding: 0; /* Remove padding */
+    }
+
+    .type-info {
+        font-size: 14px; /* Reduce font size for mobile */
+    }
+
+    .type-name {
+        color: #333; /* Change text color for better visibility */
     }
 }
 
