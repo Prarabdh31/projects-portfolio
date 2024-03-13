@@ -474,10 +474,32 @@ a:hover {
         margin: 20px auto; /* Center-align separator */
     }
     /* Reduce the width of images in the platform and tools sections */
+    /* Adjustments for smaller screens */
+
+    /* Reduce the font size and spacing for platform and tools details */
+    .platform-details, .tools-details {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    /* Reduce the font size and spacing for platform and tools names */
+    .platform-name, .tools-name {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    /* Adjust the margin between platform and tools info items */
+    .platform-info, .tools-info {
+        margin-right: 0;
+        margin-bottom: 10px; /* Increase bottom margin for better spacing */
+    }
+
+    /* Make the images smaller and of fixed size */
     .platform-logos img,
     .tools-logos img {
-        max-width: calc(50% - 20px); /* Adjust the width based on half the container width and padding */
+        width: 80px; /* Set the width of the images */
         height: auto; /* Maintain aspect ratio */
+        margin-top: 5px; /* Adjust margin for spacing */
     }
 }
 
