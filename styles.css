@@ -389,6 +389,92 @@ a:hover {
     text-align: center;
 }
 
+/* All existing CSS styles go here */
+
+/* Media query for screens smaller than 768px (standard tablets and smartphones) */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+
+    h1 {
+        font-size: 24px; /* Adjusted font size for h1 */
+    }
+
+    h2 {
+        font-size: 22px; /* Adjusted font size for h2 */
+    }
+
+    h3 {
+        font-size: 16px; /* Adjusted font size for h3 */
+    }
+
+    .project-images img {
+        width: 100%; /* Adjusted width for project images */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .upper-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align items */
+    }
+
+    .upper-half-section {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 20px; /* Increased margin between sections */
+    }
+
+    .deployment-info {
+        flex-direction: column; /* Stack deployment info vertically */
+        align-items: center; /* Center-align items */
+    }
+
+    .deployment-entry {
+        margin: 10px 0; /* Adjusted margin between deployment entries */
+    }
+
+    .project-type {
+        position: relative; /* Remove absolute positioning */
+        top: auto; /* Remove top positioning */
+        right: auto; /* Remove right positioning */
+        left: auto; /* Remove left positioning */
+        padding: 10px; /* Adjusted padding for project type */
+        margin-top: 20px; /* Adjusted margin-top for project type */
+    }
+
+    .deploy-type-id, .deploy-type-lu {
+        position: relative; /* Remove absolute positioning */
+        top: auto; /* Remove top positioning */
+        left: auto; /* Remove left positioning */
+        padding: 10px; /* Adjusted padding for deployment info */
+        margin-top: 20px; /* Adjusted margin-top for deployment info */
+    }
+
+    .deployment-label, .deployment-year {
+        font-size: 16px; /* Adjusted font size for deployment labels */
+    }
+
+    .container {
+        flex-direction: column; /* Stack container content vertically */
+    }
+
+    .half-section {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 20px; /* Increased margin between half sections */
+    }
+
+    .year-section {
+        align-items: center; /* Center-align items */
+    }
+
+    .year {
+        font-size: 24px; /* Adjusted font size for years */
+        padding: 5px 10px; /* Adjusted padding for years */
+    }
+
+    .separator {
+        margin: 20px auto; /* Center-align separator */
+    }
+}
+
 
 
 
