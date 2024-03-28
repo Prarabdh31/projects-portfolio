@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xithan Social Network: Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles specific to this page */
+        /* CSS styles for the modal window */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .close {
+            color: #333;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Center the full-size image within the modal */
+        .modal-content img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .deploy-type-lu {
+            position: absolute;
+            top: 20px; /* Adjust the top position as needed */
+            left: 310px; /* Adjust the right position as needed */
+            padding: 10px;
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            background-color: #f9f9f9; /* Light background color */
+        }
+
+        @media (max-width: 768px) {
+            .deploy-type-lu{
+                position: relative; /* Change position to relative for mobile */
+                top: auto;
+                left: auto;
+                right: auto;
+                margin-top: 10px; /* Add margin for spacing */
+                border: 2px solid #333; /* Remove border */
+                border-radius: 2px; /* Remove border radius */
+                background-color: transparent; /* Remove background color */
+                padding: 10px; /* Remove padding */
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Xithan Social Network: Full Stack</h1>
+</header>
+
+<main>
+
+    <section class="project-type">
+        <div class="type-info">
+            <span class="type-label">Project Type:</span>
+            <span class="type-name">Social Network</span>
+        </div>
+    </section>
+
+    <section class="deploy-type-id">
+        <div class="type-info">
+            <span class="type-label">Initial Deployment:</span>
+            <span class="type-name">November 2023</span>
+        </div>
+    </section>
+
+    <section class="deploy-type-lu">
+        <div class="type-info">
+            <span class="type-label">Latest Update:</span>
+            <span class="type-name">January 2024</span>
+        </div>
+    </section>
+
+
+    <section class="project-description">
+        <h2 class="description-heading">Description</h2>
+        <p>Xithan Social Network, an intricately crafted Instagram clone, showcases my adeptness in Full Stack development. Leveraging MongoDB Atlas for seamless database connectivity, Node.js with Express.js for robust server-side logic, and React for dynamic frontend rendering, I orchestrated a sophisticated platform boasting features such as post creation, commenting, and user profile management.
+
+            In HTML, I utilized semantic markup and accessibility features to ensure optimal site performance and user experience. Employing CSS, I implemented responsive design principles and advanced layout techniques for a polished and visually engaging interface. JavaScript was intricately woven throughout the project, powering dynamic interactions and client-side functionality, while Node.js and Express.js facilitated efficient server-side processing and API integration.
+            
+            Through meticulous attention to detail and strategic implementation of cutting-edge technologies, Xithan Social Network not only demonstrates my expertise in Full Stack development but also reflects my commitment to delivering exceptional user experiences in web development.</p>    
+    </section>
+
+    <hr class="separator">
+    
+    <div class="upper-container">
+        <div class="upper-half-section platform-section">
+            <section>
+                <h2>Platform & Framework</h2>
+                <div class="platform-details">
+                    <div class="platform-info">
+                        <div class="platform-name">Full Stack</div>
+                        <img src="Resources\Logos\FullStack_Logo.png" alt="Full Stack Logo" class="image" style="max-width: 200px; max-height: 100px;">
+                    </div>
+                    <div class="platform-info">
+                        <div class="platform-name">React</div>
+                        <img src="Resources\Logos\React_Logo.png" alt="React Logo" class="image" style="max-width: 200px; max-height: 100px;">
+                    </div>
+                    <div class="platform-info">
+                        <div class="platform-name">VS Code</div>
+                        <img src="Resources\Logos\VisualStudioCode_Logo.png" alt="VisualStudioCode Logo" class="image" style="max-width: 200px; max-height: 100px;">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="upper-half-section tools-section">
+            <section>
+                <h2>Languages & Tools Used</h2>
+                <div class="tools-details">
+                    <div class="tools-info">
+                        <div class="tools-name">Javascript</div>
+                        <img src="Resources\Logos\Javascript_Logo.png" alt="JavaScript Logo" class="image" style="max-width: 200px; max-height: 100px;">
+                    </div>
+                    <div class="tools-info">
+                        <div class="tools-name">Node.js & Express.js</div>
+                        <img src="Resources\Logos\NodejsExpress_logo.png" alt="VisualStudioCode Logo" class="image" style="max-width: 200px; max-height: 100px;">
+                    </div>
+                    <div class="tools-info">
+                        <div class="tools-name">MongoDB</div>
+                        <img src="Resources\Logos\MongoDB_Logo.png" alt="MongoDB Logo" class="image" style="max-width: 200px; max-height: 100px;">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <hr class="separator">
+
+    <section class="project-images">
+        <h2 class="project-images-heading">Project Images</h2>
+        
+        <div class="slideshow-container">
+            <p>Click on the images to view them.</p>
+            <div class="slides">
+                <img src="Resources\Full Stack Projects\Social Network\GIFS\GG1.gif" alt="Display Page 1" class="image">
+                <img src="Resources\Full Stack Projects\Social Network\GIFS\GG2.gif" alt="Display Page 2" class="image">
+                <img src="Resources\Full Stack Projects\Social Network\GIFS\GG3.gif" alt="Display Page 3" class="image">
+                <img src="Resources\Full Stack Projects\Social Network\GIFS\GG4.gif" alt="Display Page 4" class="image">
+                <img src="Resources\Full Stack Projects\Social Network\GIFS\GG5.gif" alt="Display Page 5" class="image">
+                <img src="Resources\Full Stack Projects\Social Network\SS1.png" alt="Display Page 6" class="image">
+                <img src="Resources\Full Stack Projects\Social Network\SS2.png" alt="Display Page 7" class="image">
+                <img src="Resources\Full Stack Projects\Social Network\SS3.png" alt="Display Page 8" class="image">
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <!-- Add footer content if needed -->
+</footer>
+
+<!-- Modal window for displaying full-size images -->
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="fullImage">
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('modal');
+    const fullImage = document.getElementById('fullImage');
+    const images = document.querySelectorAll('.project-images img');
+
+    images.forEach(img => {
+        img.addEventListener('click', function() {
+            modal.style.display = 'block';
+            fullImage.src = this.src;
+        });
+    });
+
+    const closeBtn = document.getElementsByClassName('close')[0];
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+</script>
+
+</body>
+</html>
+
+
+
+                
