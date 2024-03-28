@@ -1,7 +1,7 @@
 // Project data with names, descriptions, and links
 const projectsData = {
     "fullStack": [
-        { name: "Social Network", description: "A social networking application designed to connect people from around the world. Users can create profiles, post updates, connect with friends, and engage in discussions on various topics." },
+        { name: "Social Network", description: "A social networking application designed to connect people from around the world. Users can create profiles, post updates, connect with friends, and engage in discussions on various topics.", link: "xsocialnet.html" },
         { name: "To-Do List Application", description: "A simple and intuitive to-do list application that helps users organize their tasks and manage their daily schedules effectively. Features include task creation, priority setting, and task completion tracking." },
         { name: "Blog Application", description: "A platform for users to create and publish their own blogs. Users can write and share articles on various topics, engage with readers through comments, and customize their blog layouts." }
     ],
